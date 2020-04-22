@@ -1,8 +1,8 @@
 # Présentation de l'équipe
-Wassim Bouhdid
-Logan Carlier
-Louis Janquart
-Grégory Theunissen
+- Wassim Bouhdid
+- Logan Carlier
+- Louis Janquart
+- Grégory Theunissen
 # Description du projet
 ## Besoin du client
 Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts et leurs données (prénom, nom, totem, patrouille, rôle, numéro de téléphone, adresse mail, adresse) dans une base de données. La page permet aussi de faire une recherche dans la base de données pour afficher une fiche reprenant toutes les données d'un scout sélectionné. Il serait pratique de pouvoir supprimer des scouts et de pouvoir modifier leurs données. Il serait aussi sympa que l'outil de recherche permette de rechercher des scouts sur la base de n'importe quelle donnée et d'afficher une liste de tous les scouts correspondant au critère de recherche.
