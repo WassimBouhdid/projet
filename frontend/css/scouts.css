@@ -1,1 +1,154 @@
-
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+html {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, hr, fieldset, {
+    margin: 0;
+    padding: 0;
+}
+li > ol,
+li > ul {
+    margin-bottom: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset {
+    min-width: 0;
+    border: 0;
+}
+button {
+    outline: none;
+    background: none;
+    border: none;
+}
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+body {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    min-height: 100vh;
+    background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+}
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.button {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 33px;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    border-radius: 20px;
+    background: #57b846;
+}
+.button:hover {
+    background: #4dae3c;
+}
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    background: transparent;
+1}
+.input {
+    position: relative;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.input-style {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc;
+    background: transparent;
+}
+/* ==========================================================================
+   #SELECT
+   ========================================================================== */
+.select {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc;
+    background: transparent;
+    width: 100%;
+}
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+.title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+.card {
+    overflow: hidden;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: table;
+}
+.card .card-heading {
+    background: url("../img/campscout.jpg") top left/cover no-repeat;
+    display: table-cell;
+    width: 50%;
+}
+.card .card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+    display: table-cell;
+}
