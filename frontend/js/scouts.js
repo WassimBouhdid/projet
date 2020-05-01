@@ -12,10 +12,10 @@ function listerScouts() {
 function callbackAffichageScouts() {
     let tableau = JSON.parse(this.responseText);
     if (tableau.length === 0) {
-        return "<table></table>";
+        document.querySelector("div.listing").innerHTML = "<table></table>";
     }
-    var proprietes = Object.keys(tableau[0]);
-    var table = "<table>";
+    let proprietes = Object.keys(tableau[0]);
+    let table = "<table>";
     let titre = "<tr>";
     for (let e = 1; e < proprietes.length; e++) {
         titre += "<th>" + proprietes[e] + "</th>";
@@ -23,7 +23,7 @@ function callbackAffichageScouts() {
     titre += "</tr>\n";
     table += titre;
     for (let e of tableau) {
-        var tr = "<tr id=" + e[proprietes[0]] + ">";
+        var tr = "<tr id=" + e[proprietes[0]] + " onclick='ficheScout(" + e[proprietes[0]] + ")'>";
         for (let f = 1; f < proprietes.length; f++) {
             tr += "<td>" + e[proprietes[f]] + "</td>";
         }
@@ -39,8 +39,7 @@ function afficherCarte(card) {
     document.getElementById("listing").style.display = "none";
     if (card === 'inscription') {
         document.getElementById("inscription").style.display = "table";
-    }
-    else if (card === 'listing') {
+    } else if (card === 'listing') {
         document.getElementById("listing").style.display = "table";
     }
 }
@@ -54,4 +53,27 @@ function getInfos() {
     let totem = document.getElementById("totem").value;
     let role = document.getElementById("role").value;
     let patrouille = document.getElementById("patrouille").value;
+}
+
+function ficheScout(id) {
+    let xhr = new XMLHttpRequest();
+    xhr.open("get", "fiche");
+    xhr.onload = function () {
+        creerFiche(JSON.parse(xhr.responseText), id)
+    };
+    xhr.send();
+}
+
+function creerFiche(tableau, id) {
+    let proprietes = Object.keys(tableau[0]);
+    let table = "<table>"
+    for (let e of tableau) {
+        if (e.Id === id) {
+            for (let f = 1; f < proprietes.length; f++) {
+                table += "<tr><td>" + proprietes[f] + "</td><td>" + e[proprietes[f]] + "</td></tr>";
+            }
+        }
+    }
+    table += "</table>";
+    document.querySelector("div.fiche").innerHTML = table;
 }
