@@ -1,15 +1,25 @@
 ----- Insertion données -----
 
 insert into scouts
-(scoutPrenom, scoutNom)
+(scoutPrenom, scoutNom, patrouille, role)
 values 
-('Bastien', 'Sabeau'),
-('Martin', 'Malfroid'),
-('Aleandro', 'Gerardin'),
-('Alexandre', 'Delory'),
-('Mael', 'Albertuccio'),
-('Adrien', 'Florins'),
-('Theodore', 'Desmanet');
+('Bastien', 'Sabeau', 2, 1),
+('Martin', 'Malfroid', 3, 1),
+('Aléandro', 'Gerardin', 2, 2),
+('Alexandre', 'Delory', 1, 2),
+('Mael', 'Albertuccio', 1, 3),
+('Adrien', 'Florins', 1, 3),
+('Theodore', 'Desmanet', 3, 3),
+('Mathias', 'Alesi', 2, 3),
+('Aubrien', 'Allart',1 ,1),
+('Nathan', 'Bernardi', 2, 3),
+('Robin', 'Dery', 2, 3),
+('Flaba', 'Esteban', 2, 3),
+('Gabriel', 'Lefevre', 3, 3),
+('Logan', 'Lorent', 2, 3),
+('Florian', 'Maes', 3, 3),
+('Rénathan', 'Nonnveiler', 3, 2),
+('Roelands', 'Félix', 1, 3);
 
 --
 
@@ -25,19 +35,8 @@ values
 insert into patrouilles
 (patrNom)
 values
-('Patrouille de Coryi'),
+('Patrouille d''Alcyon'),
 ('Patrouille de Basindo'),
-('Patrouille d''Alcyon');
+('Patrouille de Coryi');
 
 --
-
-insert into donnees
-(scout, totem, patrouille, role, pays)
-values
-(1, 'Basindo', 2, 1, 'Belgique'),
-(2, 'Coryi', 1, 1, 'Belgique'),
-(3, 'Manati', 2, 2, 'Belgique'),
-(4, 'Miriki', 3, 2, 'Belgique'),
-(5, 'Springbok', 2, 3, 'Belgique'),
-(6, 'Orignal', 3, 3, 'Belgique'),
-(7, 'Boomslang', 3, 3, 'Belgique');

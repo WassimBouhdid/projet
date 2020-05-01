@@ -1,14 +1,5 @@
 ----- Tables -----
 
-create table scouts (
-scoutId integer not null default autoincrement,
-scoutPrenom char(255) not null,
-scoutNom char(255) not null,
-constraint pk_scouts primary key (scoutId)
-)
-
---
-
 create table roles (
 roleId integer not null default autoincrement,
 roleLib char(255) not null,
@@ -25,8 +16,10 @@ constraint pk_patrouilles primary key (patrId)
 
 --
 
-create table donnees (
-scout integer not null,
+create table scouts (
+scoutId integer not null default autoincrement,
+scoutPrenom char(255) not null,
+scoutNom char(255) not null,
 totem char(255) null,
 patrouille integer not null,
 role integer not null,
@@ -37,8 +30,7 @@ numero char(255) null,
 code char(4) null,
 ville char(255) null,
 pays char(255) null,
-constraint fk_donnees_scouts foreign key (scout) references scouts(scoutId),
-constraint fk_donnees_patrouilles foreign key (patrouille) references patrouilles(patrId),
-constraint fk_donnees_roles foreign key (role) references roles(roleId),
-constraint pk_donnees primary key (scout)
+constraint fk_scouts_patrouilles foreign key (patrouille) references patrouilles(patrId),
+constraint fk_scouts_roles foreign key (role) references roles(roleId),
+constraint pk_scouts primary key (scoutId)
 )
