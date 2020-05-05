@@ -1,7 +1,7 @@
 ----- Insertion données -----
 
 insert into scouts
-(scoutPrenom, scoutNom, patrouille, role, totem, telephone, mail, dateNaissance)
+(scoutPrenom, scoutNom, scoutPatrouille, scoutRole, scoutTotem, scoutTelephone, scoutMail, scoutDateNaissance)
 values 
 ('Bastien', 'Sabeau', 2, 1, 'Basindo', '0499/99.99.99', 'basindo@gmail.com', '2003-05-01'),
 ('Martin', 'Malfroid', 3, 1, 'Coryi', '0499/99.99.99', 'coryi@gmail.com', '2003-05-01'),
@@ -33,7 +33,7 @@ values
 --
 
 insert into patrouilles
-(patrNom)
+(patrLib)
 values
 ('Patrouille d''Alcyon'),
 ('Patrouille de Basindo'),

@@ -1,6 +1,6 @@
 ----- Procédures / fonctions de base -----
 
-create function "DBA"."getPath"()
+create function getPath()
 returns long varchar
 deterministic
 begin
@@ -14,7 +14,7 @@ end;
 
 --
 
-create procedure "DBA"."http_getPage"(in url char(255))
+create procedure http_getPage(in url char(255))
 result(html long varchar)
 begin
 	call sa_set_http_header('Content-Type', 'text/html');
@@ -23,7 +23,7 @@ end;
 
 --
 
-create procedure "DBA"."http_getCSS"(in url char(255))
+create procedure http_getCSS(in url char(255))
 result(css long varchar)
 begin 
 	call sa_set_http_header('Content-Type', 'text/css');
@@ -32,7 +32,7 @@ end;
 
 --
 
-create procedure "DBA"."http_getJS"(in url char(255))
+create procedure http_getJS(in url char(255))
 result(js long varchar)
 begin 
 	call sa_set_http_header('Content-Type', 'text/javascript');
@@ -41,7 +41,7 @@ end;
 
 --
 
-create procedure "DBA"."http_getIMG"(in url char(255))
+create procedure http_getIMG(in url char(255))
 result(img binary)
 begin 
 	call sa_set_http_header('Content-Type', 'image/jpg');

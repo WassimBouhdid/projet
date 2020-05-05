@@ -1,7 +1,7 @@
 create procedure proc_listerScouts()
-result(id integer, nom char(255), prenom char(255))
+result(id integer, "Nom" char(255), "Prénom" char(255))
 begin
-	select scouts.scoutId, scoutNom, scoutPrenom
+	select scoutId, scoutNom, scoutPrenom
     from scouts
 end
 
