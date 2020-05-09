@@ -26,3 +26,21 @@ Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts e
  - **roles** -> reprend les différents rôles
  - **patrouilles** -> reprend les différentes patrouilles
  - **scouts** -> reprend tous les scouts et leurs inforamtions
+ # Webservices 
+ **-** service de base
+ 
+    - service root(:url) -> renvoie la page si elle existe, l'index sinon.
+      Réponse:page HTML
+    
+    - service js(:url) -> renvoie le fichier js à partir d'un nom ( avec extension )
+       Réponse: fichier js
+    
+    - service css(:url) -> renvoie le fichier css à partir d'un nom ( avec extension )
+    Réponse: fichier css
+    
+    - service img(:url) -> renvoie le fichier image à partir d'un nom ( avec extension )
+    Réponse: fichier image
+    
+    -service page(:url) -> renvoie la page si elle existe, l'index sinon.
+    Réponse:page HTML
+ 
