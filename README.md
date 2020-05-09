@@ -22,6 +22,7 @@ Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts e
  - Le service "lister" permet de construire le listing des scouts inscrits dans la base de données. Il ne prend aucun paramètre et renvoie un tableau reprenant les noms et prénoms des scouts inscrits dans la base de données.
  - Le service "fiche" permet d'afficher toutes les infos d'un scout sélectionné. Il ne prend aucun paramètre et renvoie un tableau reprenant toutes les infos 
  # Détail DB
+ ![](diagramme_er.png)
  Nous disposons de 3 tables :
  - Une table "rôles" reprenant les noms des différents rôles ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacun des différents rôles. La primary key est l'id du rôle.
   - Une table "patrouilles" reprenant les noms des différentes patrouilles ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacune des différenets patrouilles. La primary key est l'id de la patrouille.
