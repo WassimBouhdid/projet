@@ -18,7 +18,9 @@ Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts e
  # Aspects implémentés
  
  # Détail api rest
- 
+ Nous disposons de 6 services :
+ - Le service "lister" permet de construire le listing des scouts inscrits dans la base de données. Il ne prend aucun paramètre et renvoie un tableau reprenant les noms et prénoms des scouts inscrits dans la base de données.
+ - Le service "fiche" permet d'afficher toutes les infos d'un scout sélectionné. Il ne prend aucun paramètre et renvoie un tableau reprenant toutes les infos 
  # Détail DB
  Nous disposons de 3 tables :
  - Une table "rôles" reprenant les noms des différents rôles ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacun des différents rôles. La primary key est l'id du rôle.
