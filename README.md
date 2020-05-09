@@ -23,7 +23,6 @@ Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts e
  - Le service "fiche" permet d'afficher toutes les infos d'un scout sélectionné. Il ne prend aucun paramètre et renvoie un tableau reprenant toutes les infos 
  # Détail DB
  ![](diagramme_er.png)
- Nous disposons de 3 tables :
- - **rôles**
+ - **roles**
  - **patrouilles**
- - **scout**
+ - **scouts**
