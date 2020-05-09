@@ -24,6 +24,6 @@ Nous désirons une page web qui permet à un utilisateur d'inscrire des scouts e
  # Détail DB
  ![](diagramme_er.png)
  Nous disposons de 3 tables :
- - Une table "rôles" reprenant les noms des différents rôles ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacun des différents rôles. La primary key est l'id du rôle.
-  - Une table "patrouilles" reprenant les noms des différentes patrouilles ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacune des différenets patrouilles. La primary key est l'id de la patrouille.
-  - Une table "scouts" reprenant les infos de chaque scout (nom, prénom, date de naissance, téléphone, mail, totem, patrouille et rôle) ainsi qu'un id (qui est un nombre entier auto-incrémenté) pour chacun des différents scouts. La patrouille et le rôle sont deux foreign keys faisant référance aux primary keys des tables "patrouilles" et "rôles". La primary key est l'id du scout.
+ - **rôles**
+ - **patrouilles**
+ - **scout**
